@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">iDea</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Fernet97</string>
+    <string name="nav_header_subtitle">pierlu1997@libero.it</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="allnews">Notizie principali</string>
+    <string name="politica">Politica</string>
+    <string name="sociologia">Sociologia</string>
+    <string name="tecnologia">Tecnologia</string>
+    <string name="ambiente">Ambiente</string>
+    <string name="economia">Economia</string>
+    <string name="seguiti">Seguiti</string>
+    <string name="arte">Arte</string>
+    <string name="descrizione">iDea è un esperimento sociale che ha luogo in tal omonima piattaforma. Definito un Social 2.0,
+        iDea ha l obiettivo di spronare gli utenti al ragionamento, al prendere prendere una posizione su vari temi, costruendo un
+        pensiero critico. Il feed è riempito da varie idee che non hanno correlazione con unidentità specifica, pertanto
+        ogni opinione è mascherata dal numero di Follower, dagli apprezzamenti e da cui l ha scritto.
+        \nEnjoy iDea.</string>
+    <string name="Registrati">Registrati</string>
+    <string name="Login">Login</string>
+
+
+</resources>

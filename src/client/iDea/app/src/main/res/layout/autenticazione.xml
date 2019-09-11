@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/texture_white_stone"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="0dp"
+        android:gravity="center"
+        android:background="@drawable/pensatore2"
+        >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="iDea"
+                android:textSize="75dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowRadius="50"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="monospace"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/descrizione"
+                android:textSize="12dp"
+                android:shadowColor="@color/colorPrimaryDark"
+
+                android:shadowRadius="10"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginHorizontal="50dp"
+                android:layout_gravity="center">
+
+                <Button
+                    style="@style/Theme.AppCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/Registrati"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:background="@drawable/background_button"
+                    android:layout_marginVertical="10dp"
+                    android:shadowColor="@color/colorPrimaryDark"
+                    android:shadowRadius="50"
+
+                    />
+
+                <Button
+                    android:id="@+id/login"
+                    style="@style/Theme.AppCompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/Login"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:background="@drawable/background_button"
+                    android:layout_marginVertical="10dp"
+                    android:shadowColor="@color/colorPrimaryDark"
+                    android:shadowRadius="50"
+                    android:onClick="allaHome"
+                    />
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
