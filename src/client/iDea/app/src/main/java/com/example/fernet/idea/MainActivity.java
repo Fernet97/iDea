@@ -1,8 +1,12 @@
 package com.example.fernet.idea;
 
+import android.app.Fragment;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,7 +17,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
+import android.widget.ListView;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.zip.Inflater;
 
 import static java.security.AccessController.getContext;
@@ -21,7 +29,6 @@ import static java.security.AccessController.getContext;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private AdapterView posts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +37,7 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //Bottone nuvola in basso
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,20 +56,15 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-
-        /**
-        posts = Inflater.inflate(R.layout.sezione_partite_pubbliche, Container).findViewById(R.id.lista_partite_pubbliche);
-        CustomAdapter customAdapter = new CustomAdapter(getContext(), R.layout.list_elem_partita, partite, true);
-        listView.setAdapter(customAdapter); //Magari questa operazione la faccio dentro al task asincrono
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String str = listView.getItemAtPosition(position).toString();
-                //Fai qualcosa
-            }
-        });
-         */
+        //Creo feed
+        FragmentManager fm = getFragmentManager();
+        FragmentTransaction ft = fm.beginTransaction();
+        Fragment feed = new Feed();
+        ft.add(feed, "feed");
+        ft.commit();
     }
+
+
 
     @Override
     public void onBackPressed() {

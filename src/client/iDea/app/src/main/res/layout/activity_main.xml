@@ -10,11 +10,14 @@
     android:background="@drawable/texture_white_stone"
     android:theme="@style/AppTheme.NoActionBar">
 
+
     <include
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+
+    <!-- Menu laterale -->
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
@@ -24,15 +27,6 @@
         android:background="@drawable/texture_white_stone"
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/activity_main_drawer" />
-
-
-    <ListView
-        android:id="@+id/posts"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="55dp">
-    </ListView>
-
 
 
 
