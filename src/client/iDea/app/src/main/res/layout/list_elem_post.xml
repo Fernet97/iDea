@@ -108,7 +108,8 @@
                     android:textStyle="bold"
                     android:fontFamily="monospace"
                     android:textColor="@color/colorPrimary"
-                    android:text="15"/>
+                    android:text="15"
+                    />
             </LinearLayout>
 
 
@@ -124,10 +125,10 @@
 
                 <ImageView
                     android:id="@+id/follow"
-                    android:layout_width="20dp"
+                    android:layout_width="25dp"
                     android:layout_height="20dp"
                     android:background="@drawable/follow"
-                    android:backgroundTint="@android:color/holo_blue_bright"/>
+                    android:backgroundTint="@color/colorPrimary"/>
             </LinearLayout>
 
 
@@ -142,9 +143,11 @@
                 android:gravity="center"
                 >
 
+
+                <!--Se attivo suo color primary-->
                 <ImageView
                     android:id="@+id/dislike"
-                    android:backgroundTint="@android:color/holo_red_dark"
+                    android:backgroundTint="#959595"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:background="@drawable/dislike"/>
@@ -155,9 +158,8 @@
                         android:textSize="10dp"
                         android:textStyle="bold"
                         android:fontFamily="monospace"
-                        android:shadowColor="@android:color/holo_red_dark"
-                        android:shadowRadius="10"
                         android:text="544"
+                        android:textColor="@color/colorPrimary"
                         />
             </LinearLayout>
 
@@ -178,7 +180,8 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:background="@drawable/like"
-                    android:backgroundTint="@color/colorAccent"/>
+
+                    android:backgroundTint="@color/colorPrimary"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -186,9 +189,8 @@
                     android:textSize="10dp"
                     android:textStyle="bold"
                     android:fontFamily="monospace"
-                    android:shadowColor="@color/colorAccent"
-                    android:shadowRadius="10"
                     android:text="744"
+                    android:textColor="@color/colorPrimary"
                     />
             </LinearLayout>
 

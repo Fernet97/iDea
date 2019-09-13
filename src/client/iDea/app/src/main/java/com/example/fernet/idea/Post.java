@@ -10,11 +10,11 @@ public class Post {
     private String description;
     private int numLike;
     private int numDisLike;
-    private LocalDateTime DateHourBorn;
+    private String DateHourBorn;
     private ArrayList<String> commenti;
 
 
-    public Post(long id, long id_author, String description, int numLike, int numDisLike, LocalDateTime dateHourBorn, ArrayList<String> commenti) {
+    public Post(long id, long id_author, String description, int numLike, int numDisLike, String dateHourBorn, ArrayList<String> commenti) {
         this.id = id;
         this.id_author = id_author;
         this.description = description;
@@ -65,11 +65,11 @@ public class Post {
         this.numDisLike = numDisLike;
     }
 
-    public LocalDateTime getDateHourBorn() {
+    public String getDateHourBorn() {
         return DateHourBorn;
     }
 
-    public void setDateHourBorn(LocalDateTime dateHourBorn) {
+    public void setDateHourBorn(String dateHourBorn) {
         DateHourBorn = dateHourBorn;
     }
 

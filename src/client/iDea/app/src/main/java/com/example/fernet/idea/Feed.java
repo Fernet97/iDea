@@ -30,7 +30,7 @@ public class Feed extends Fragment implements View.OnClickListener {
         CustomAdapter customAdapter = new CustomAdapter(v.getContext(), R.layout.list_elem_post, new ArrayList<Post>());
 
         for (int i=0; i<5; i++) {
-            Post c = new Post(4323454, 5672456, "La risata produce una sensazione di benessere attraverso lo stimolo di processi organici vitali; un'emozione che muove gli intestini e il diaframma; in una parola una sensazione di salute ben percepibile da ognuno: in questo modo noi possiamo raggiungere il corpo attraverso l'anima e servirci di quest'ultima come medico del primo", 34, 18, LocalDateTime.parse("2015-08-04T10:11:30"), new ArrayList<String>());
+            Post c = new Post(4323454, 5672456, "La risata produce una sensazione di benessere attraverso lo stimolo di processi organici vitali; un'emozione che muove gli intestini e il diaframma; in una parola una sensazione di salute ben percepibile da ognuno: in questo modo noi possiamo raggiungere il corpo attraverso l'anima e servirci di quest'ultima come medico del primo", 34, 18, "2015-08-04T10:11:30", new ArrayList<String>());
             customAdapter.add(c);
         }
 
