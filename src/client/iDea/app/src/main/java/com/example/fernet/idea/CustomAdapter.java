@@ -27,17 +27,17 @@ public class CustomAdapter extends ArrayAdapter<Post> {
     		if (v == null) {
     			Log.d("DEBUG","Inflating view");
     			v = inflater.inflate(R.layout.list_elem_post, null);
-    		}
-    		
+            }
+
             Post c = getItem(position);
        
 			Log.d("DEBUG","contact c="+c);
 			
             TextView Data;
-            Data = v.findViewById(R.id.data_post);
-        	Log.d("DEBUG","data="+Data);
+           // Data = v.findViewById(R.id.data_post);
+        	//Log.d("DEBUG","data="+Data);
 
-            Data.setText(c.getDateHourBorn().toString());
+            //Data.setText(c.getDateHourBorn().toString());
 
             return v;
     }

@@ -61,20 +61,20 @@
 
 
         <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:padding="15dp"
-                android:fontFamily="monospace"
-                android:justificationMode="inter_word"
-                android:gravity="center"
-                android:shadowColor="@color/colorPrimaryDark"
-                android:shadowRadius="5"
-                android:text="@string/descrizione"
-                android:textColor="@android:color/black"
-                android:textSize="11dp"
-                android:textStyle="normal"
-                android:background="@drawable/cover_post"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:padding="15dp"
+            android:fontFamily="monospace"
+            android:justificationMode="inter_word"
+            android:gravity="center"
+            android:shadowColor="@color/colorPrimaryDark"
+            android:shadowRadius="5"
+            android:text="@string/descrizione"
+            android:textColor="@android:color/black"
+            android:textSize="11dp"
+            android:textStyle="normal"
+            android:background="@drawable/cover_post"/>
 
 
         <RelativeLayout
@@ -98,7 +98,7 @@
                     android:id="@+id/comment"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:background="@drawable/comment"
+                    android:background="@drawable/commento"
                     android:backgroundTint="@color/colorPrimary"/>
 
                 <TextView
@@ -126,7 +126,7 @@
                 <ImageView
                     android:id="@+id/follow"
                     android:layout_width="25dp"
-                    android:layout_height="20dp"
+                    android:layout_height="25dp"
                     android:background="@drawable/follow"
                     android:backgroundTint="@color/colorPrimary"/>
             </LinearLayout>
@@ -152,15 +152,15 @@
                     android:layout_height="20dp"
                     android:background="@drawable/dislike"/>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="10dp"
-                        android:textStyle="bold"
-                        android:fontFamily="monospace"
-                        android:text="544"
-                        android:textColor="@color/colorPrimary"
-                        />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"
+                    android:text="544"
+                    android:textColor="@color/colorPrimary"
+                    />
             </LinearLayout>
 
 
@@ -173,14 +173,13 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
-              >
+                >
 
                 <ImageView
                     android:id="@+id/like"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:background="@drawable/like"
-
                     android:backgroundTint="@color/colorPrimary"/>
 
                 <TextView
