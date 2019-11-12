@@ -22,7 +22,7 @@
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Modifica profilo" />
+            android:title="Impostazioni" />
     </group>
 
     <item android:title="Seguiti">

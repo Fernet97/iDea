@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fernet.idea.InitialFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="iDea"
+                android:textSize="75dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowRadius="50"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="monospace"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/descrizione"
+                android:textSize="12dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:shadowRadius="10"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorPrimary" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginHorizontal="50dp"
+                android:layout_gravity="center">
+
+
+                <com.ebanx.swipebtn.SwipeButton
+                    android:id="@+id/Registrati"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginVertical="20dp"
+                    app:inner_text="@string/Registrati"
+                    app:inner_text_color="@color/colorPrimary"
+                    app:inner_text_size="18dp"
+                    app:inner_text_bottom_padding="18dp"
+                    app:inner_text_top_padding="18dp"
+                    app:button_left_padding="15dp"
+                    app:button_right_padding="15dp"
+                    app:button_top_padding="15dp"
+                    app:button_bottom_padding="15dp"
+                    app:button_image_disabled="@drawable/freccia"
+                    app:button_image_enabled="@drawable/check"
+                    android:soundEffectsEnabled="true"
+                    />
+
+                <com.ebanx.swipebtn.SwipeButton
+                    android:id="@+id/Login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:inner_text="@string/Login"
+                    app:inner_text_color="@color/colorPrimary"
+                    app:inner_text_size="18dp"
+                    app:inner_text_bottom_padding="18dp"
+                    app:inner_text_top_padding="18dp"
+                    app:button_left_padding="15dp"
+                    app:button_right_padding="15dp"
+                    app:button_top_padding="15dp"
+                    app:button_bottom_padding="15dp"
+                    app:button_image_disabled="@drawable/freccia"
+                    app:button_image_enabled="@drawable/check"
+                    android:soundEffectsEnabled="true"
+                    />
+
+                </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

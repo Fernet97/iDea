@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,6 +8,7 @@
 
 
     <LinearLayout
+        android:id="@+id/autenticazione_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -15,93 +17,14 @@
         android:background="@drawable/pensatore2"
         >
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:text="iDea"
-                android:textSize="75dp"
-                android:shadowColor="@color/colorPrimaryDark"
-                android:shadowRadius="50"
-                android:gravity="center"
-                android:textColor="@color/colorPrimary"
-                android:fontFamily="monospace"/>
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/descrizione"
-                android:textSize="12dp"
-                android:shadowColor="@color/colorPrimaryDark"
-                android:shadowRadius="10"
-                android:gravity="center"
-                android:layout_margin="10dp"
-                android:textStyle="bold"
-                android:fontFamily="monospace"
-                android:textColor="@color/colorPrimary"
-                />
-
-
-            <LinearLayout
-                android:id="@+id/autenticazione_layout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_marginHorizontal="50dp"
-                android:layout_gravity="center">
-
-
-                <com.ebanx.swipebtn.SwipeButton
-                    android:id="@+id/Registrati"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginVertical="20dp"
-                    app:inner_text="@string/Registrati"
-                    app:inner_text_color="@color/colorPrimary"
-                    app:inner_text_size="18dp"
-                    app:inner_text_bottom_padding="18dp"
-                    app:inner_text_top_padding="18dp"
-                    app:button_left_padding="15dp"
-                    app:button_right_padding="15dp"
-                    app:button_top_padding="15dp"
-                    app:button_bottom_padding="15dp"
-                    app:button_image_disabled="@drawable/freccia"
-                    android:soundEffectsEnabled="true"
-                    />
-
-                <com.ebanx.swipebtn.SwipeButton
-                    android:id="@+id/Login"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    app:inner_text="@string/Login"
-                    app:inner_text_color="@color/colorPrimary"
-                    app:inner_text_size="18dp"
-                    app:inner_text_bottom_padding="18dp"
-                    app:inner_text_top_padding="18dp"
-                    app:button_left_padding="15dp"
-                    app:button_right_padding="15dp"
-                    app:button_top_padding="15dp"
-                    app:button_bottom_padding="15dp"
-                    app:button_image_disabled="@drawable/freccia"
-                    android:soundEffectsEnabled="true"
-                    />
-
-            </LinearLayout>
-
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
 
     </LinearLayout>
 
 
 
-
-
-
-
-
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
